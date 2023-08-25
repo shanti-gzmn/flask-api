@@ -17,6 +17,6 @@ def hello():
     user_ip = request.cookies.get('user_ip')
     context = {
         'user_ip': user_ip,
-        'todos': todos,
+        'todos': todos
     }
     return render_template('hello.html', **context)
